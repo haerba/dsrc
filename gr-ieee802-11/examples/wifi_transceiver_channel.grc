@@ -246,7 +246,7 @@
     </param>
     <param>
       <key>const</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>affinity</key>
@@ -478,7 +478,7 @@
     </param>
     <param>
       <key>LOS</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -494,7 +494,7 @@
     </param>
     <param>
       <key>N</key>
-      <value>8</value>
+      <value>12</value>
     </param>
     <param>
       <key>K</key>
@@ -502,7 +502,7 @@
     </param>
     <param>
       <key>seed</key>
-      <value>0</value>
+      <value>456</value>
     </param>
   </block>
   <block>
