@@ -258,7 +258,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1216, 548)</value>
+      <value>(1448, 700)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -360,7 +360,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1392, 700)</value>
+      <value>(1624, 780)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -447,6 +447,69 @@
     </param>
   </block>
   <block>
+    <key>channels_channel_model</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>block_tags</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>epsilon</key>
+      <value>1.0</value>
+    </param>
+    <param>
+      <key>freq_offset</key>
+      <value>0.0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(992, 596)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>channels_channel_model_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>noise_voltage</key>
+      <value>0.00</value>
+    </param>
+    <param>
+      <key>seed</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>taps</key>
+      <value>1.0 + 1.0j</value>
+    </param>
+  </block>
+  <block>
     <key>channels_fading_model</key>
     <param>
       <key>alias</key>
@@ -466,7 +529,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(928, 524)</value>
+      <value>(1184, 668)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1608,7 +1671,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 508)</value>
+      <value>(768, 524)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1666,8 +1729,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>channels_fading_model_0</source_block_id>
+    <source_block_id>channels_channel_model_0</source_block_id>
     <sink_block_id>wifi_phy_hier_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>channels_fading_model_0</source_block_id>
+    <sink_block_id>channels_channel_model_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
